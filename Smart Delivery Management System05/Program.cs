@@ -21,6 +21,25 @@
 
             #endregion
 
+            #region Question02
+
+            //a) What is a Shallow Copy?
+            //Answer:A shallow copy means creating a new object with the same values. Value types are newly created and assigned their values, but reference types (such as nested objects) are reused by copying their references.
+
+            //b) What is a Deep Copy?
+            //Answer:A Deep copy means creating a new object with the same values. Value types and refrence type are newly created and assigned their values in indpented objects
+
+            //c) What happens to reference-type members when a Shallow Copy is created?
+            //Answer:The reference-type members are reused.
+
+            //d) What happens to reference-type members when a Deep Copy is created?
+            //Answer:The reference-type members are newly created in a separate object.
+
+            //e) Give one situation where Deep Copy would be safer than Shallow Copy.
+            //Answer:When you need to modify one object without affecting the other object. In a shallow copy, the reference types will be affected, but in a deep copy, the reference types are independent inside a separate object.
+
+
+            #endregion
 
 
 
