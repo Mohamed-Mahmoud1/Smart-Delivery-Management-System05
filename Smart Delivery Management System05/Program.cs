@@ -73,6 +73,22 @@
 
             #endregion
 
+            #region Question05
+
+            //a) What is a Partial Class?
+            //Answer:A partial class allows a single class definition to be split across multiple files to improve organization and maintainability.
+
+            //b) Why would a developer split one class into multiple files?
+            //Answer:to improve organization and maintainability.
+
+            //c) What is a Partial Method?
+            //Answer:A partial method allows a method's declaration and its implementation to be split across different files of a partial class.
+
+            //d) What happens if a declared partial method has no implementation?
+            //Answer:The compiler ignores all calls to the method.
+
+
+            #endregion
 
             #endregion
 
