@@ -38,10 +38,24 @@
             //e) Give one situation where Deep Copy would be safer than Shallow Copy.
             //Answer:When you need to modify one object without affecting the other object. In a shallow copy, the reference types will be affected, but in a deep copy, the reference types are independent inside a separate object.
 
-
             #endregion
 
+            #region Question03
 
+            //a) What is a static field, and how is it different from an instance field?
+            //Answer:A static field means it belongs to the class, it is created only once, shared among all objects, and can be accessed through the class. On the other hand, an instance field means it belongs to the object, and you need to create an object to access the field.
+
+            // b) What is a static method? Can a static method directly access instance members ?
+            //Answer:A static method means it belongs to the class, and you can access the method directly via the class name without creating an object. It cannot directly access instance members.
+
+            //c) What is a static constructor, and when is it executed?
+            //Answer:A static constructor is a special constructor that runs automatically before any static member is accessed or the first instance is created.
+
+            //d) What is a static class? Can you create an object from a static class?
+            //Answer:A static class acts as a container that groups static members together, and it cannot be instantiated.
+
+
+            #endregion
 
 
             #endregion
