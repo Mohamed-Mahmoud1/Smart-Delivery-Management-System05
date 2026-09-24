@@ -158,6 +158,16 @@ namespace Smart_Delivery_Management_System05
 
             #endregion
 
+            #region 7.Static Class
+
+            //DeliveryUtilities.PrintSeparator();
+            //DeliveryUtilities.PrintSystemTitle();
+            //DeliveryUtilities.PrintSeparator();
+            
+
+            #endregion
+
+
             #endregion
 
 
