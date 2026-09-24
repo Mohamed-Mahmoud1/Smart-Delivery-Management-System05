@@ -155,5 +155,17 @@ namespace Smart_Delivery_Management_System05
         {
             return ShallowCopy();
         }
+
+       public Shipment DeepCopy()
+        {
+            Shipment copyShipment = new Shipment();
+            copyShipment.TrackingCode = this.TrackingCode;
+            copyShipment.Description = this.Description;
+            copyShipment.Weight = this.Weight;
+            copyShipment.DeliveryFee = this.DeliveryFee;
+            copyShipment.Destination = new DeliveryAddress(this.Destination.City,this.Destination.Street,this.Destination.Building_Number);
+            return copyShipment;
+
+        }
     }
 }

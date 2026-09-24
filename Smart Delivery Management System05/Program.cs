@@ -1,4 +1,6 @@
-﻿namespace Smart_Delivery_Management_System05
+﻿using System.Net;
+
+namespace Smart_Delivery_Management_System05
 {
     internal class Program
     {
@@ -101,7 +103,6 @@
             //Shipment shipment2 = shipment1.CopyShipment();
             #endregion
 
-
             #region 2.Shallow Copy
 
 
@@ -115,7 +116,20 @@
 
             #endregion
 
+            #region 3.Deep Copy
+            //DeliveryAddress deliveryadders = new DeliveryAddress("Cairo");
+            //Shipment shipment1 = new Shipment("SH001", "Laptop", 3, 80, deliveryadders);
 
+            //Shipment shipment2 = shipment1.DeepCopy();
+            //Console.WriteLine("Before change");
+            //Console.WriteLine("Shipment(1):"+shipment1.Destination.City);
+            //Console.WriteLine("Shipment(2):"+shipment2.Destination.City);
+            //Console.WriteLine("After changing copied address");
+            //shipment2.Destination.City = "Giza";
+            //Console.WriteLine("Shipment(1):"+shipment1.Destination.City);
+            //Console.WriteLine("Shipment(2):"+shipment2.Destination.City);
+
+            #endregion
 
             #endregion
 

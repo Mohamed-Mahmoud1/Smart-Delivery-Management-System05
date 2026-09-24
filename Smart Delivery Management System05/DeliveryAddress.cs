@@ -18,6 +18,11 @@ namespace Smart_Delivery_Management_System05
             Building_Number = building_number;
         }
 
+        public DeliveryAddress(string city)
+        {
+            City = city;
+        }
+
         public void GetFullAddress()
         {
             Console.WriteLine($"City: {City}\nStreet: {Street}\nBuilding Number: {Building_Number}\n----------------");
