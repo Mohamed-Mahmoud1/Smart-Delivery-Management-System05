@@ -183,5 +183,6 @@ namespace Smart_Delivery_Management_System05
         {
             return TotalShipmentsCreated;
         }
+       public partial void OnTrackingStatusChanged(string newStatus);
     }
 }

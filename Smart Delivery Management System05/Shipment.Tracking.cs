@@ -13,7 +13,17 @@ namespace Smart_Delivery_Management_System05
         }
         public void UpdateTrackingStatus(string trackingStatus)
         {
-            TrackingStatus = trackingStatus;
+          
+            OnTrackingStatusChanged(trackingStatus);
+            Console.WriteLine($"Tracking status changed to:{trackingStatus}");
         }
+
+      public partial void OnTrackingStatusChanged(string newStatus)
+        {
+            TrackingStatus = newStatus;
+            
+        }
+
+
     }
 }

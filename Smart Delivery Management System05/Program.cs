@@ -180,6 +180,17 @@ namespace Smart_Delivery_Management_System05
             //Partial shipment class created.
             #endregion
 
+            #region 10.Partial Method
+
+            //DeliveryAddress deliveryadders = new DeliveryAddress("Cairo");
+            //Shipment shipment1 = new Shipment("SH001", "Laptop", 3, 80, deliveryadders);
+            //shipment1.UpdateTrackingStatus("Out For Delivery");
+
+
+
+            #endregion
+
+
 
             #endregion
 
