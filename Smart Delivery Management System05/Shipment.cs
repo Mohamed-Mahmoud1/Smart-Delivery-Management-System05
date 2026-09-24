@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Smart_Delivery_Management_System05
 {
-    public  class Shipment
+    public class Shipment : ICloneable
     {
         string _TackingCode;
         string _Description;
@@ -89,7 +89,7 @@ namespace Smart_Delivery_Management_System05
 
         public DeliveryAddress Destination { get; set; }
 
-        public virtual decimal EstimatedCost { get; }//abstract property
+        public virtual decimal EstimatedCost { get; }
 
         public override string ToString()
         {
@@ -145,6 +145,15 @@ namespace Smart_Delivery_Management_System05
             return copyShipment;
 
         }
-     
+
+        public Shipment ShallowCopy()
+        {
+            return (Shipment)this.MemberwiseClone();
+        }
+
+        public object Clone()
+        {
+            return ShallowCopy();
+        }
     }
 }

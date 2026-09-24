@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Smart_Delivery_Management_System05
 {
-    public struct DeliveryAddress
+    public class DeliveryAddress
     {
 
         public string City { get; set; }

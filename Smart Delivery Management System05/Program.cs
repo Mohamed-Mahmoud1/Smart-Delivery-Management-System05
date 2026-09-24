@@ -95,10 +95,24 @@
             #region Part 02 — Practical
 
             #region 1.Object Copying
-            DeliveryAddress deliveryadders = new DeliveryAddress("Germany", "", 0);
-            Shipment shipment1 = new Shipment("SH001", "Laptop", 3, 80, deliveryadders);
+            //DeliveryAddress deliveryadders = new DeliveryAddress("Germany", "", 0);
+            //Shipment shipment1 = new Shipment("SH001", "Laptop", 3, 80, deliveryadders);
 
-            Shipment shipment2 = shipment1.CopyShipment();
+            //Shipment shipment2 = shipment1.CopyShipment();
+            #endregion
+
+
+            #region 2.Shallow Copy
+
+
+            //DeliveryAddress deliveryadders = new DeliveryAddress("Germany", "", 0);
+            //Shipment shipment1 = new Shipment("SH001", "Laptop", 3, 80, deliveryadders);
+
+            //Shipment shipment2 = shipment1.ShallowCopy();
+            //deliveryadders.City = "France";
+            //Console.WriteLine(shipment1);
+            //Console.WriteLine(shipment2);
+
             #endregion
 
 
