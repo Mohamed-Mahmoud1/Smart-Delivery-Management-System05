@@ -163,10 +163,18 @@ namespace Smart_Delivery_Management_System05
             //DeliveryUtilities.PrintSeparator();
             //DeliveryUtilities.PrintSystemTitle();
             //DeliveryUtilities.PrintSeparator();
-            
+
 
             #endregion
 
+            #region 8.Extension Methods
+
+            //DeliveryAddress deliveryadders = new DeliveryAddress("Cairo");
+            //Shipment shipment1 = new Shipment("SH001", "Laptop", 3, 80, deliveryadders);
+
+            //Console.WriteLine(shipment1.GetSummary());
+
+            #endregion
 
             #endregion
 
