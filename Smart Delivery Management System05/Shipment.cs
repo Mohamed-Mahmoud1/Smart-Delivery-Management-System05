@@ -12,6 +12,11 @@ namespace Smart_Delivery_Management_System05
         decimal _Weight;
         decimal _DeliveryFee;
 
+        static Shipment()
+        {
+            TotalShipmentsCreated = 0;
+            Console.WriteLine("Static Constructor initialization!");
+        }
         public Shipment()
         {
             TotalShipmentsCreated++;

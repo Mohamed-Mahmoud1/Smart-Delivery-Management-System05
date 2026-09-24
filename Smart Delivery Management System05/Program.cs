@@ -143,6 +143,12 @@ namespace Smart_Delivery_Management_System05
             #endregion
 
 
+            #region 5.Static Constructor
+            //Console.WriteLine(Shipment.TotalShipmentsCreated);
+            #endregion
+
+
+
             #endregion
 
 
