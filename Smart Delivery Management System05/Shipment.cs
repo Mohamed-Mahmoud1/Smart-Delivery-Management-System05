@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Smart_Delivery_Management_System05
 {
-    public class Shipment : ICloneable
+    public partial class Shipment : ICloneable
     {
 
         string _TackingCode;

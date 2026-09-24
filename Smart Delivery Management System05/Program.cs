@@ -176,6 +176,11 @@ namespace Smart_Delivery_Management_System05
 
             #endregion
 
+            #region 9.Partial Shipment Class
+            //Partial shipment class created.
+            #endregion
+
+
             #endregion
 
 
