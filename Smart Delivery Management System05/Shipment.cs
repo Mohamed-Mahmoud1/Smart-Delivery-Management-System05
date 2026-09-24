@@ -6,7 +6,7 @@ namespace Smart_Delivery_Management_System05
 {
     public class Shipment : ICloneable
     {
-       
+
         string _TackingCode;
         string _Description;
         decimal _Weight;
@@ -141,7 +141,7 @@ namespace Smart_Delivery_Management_System05
             Weight = baseWeight + extraPackingWeight;
 
         }
-       public Shipment CopyShipment()
+        public Shipment CopyShipment()
         {
             Shipment copyShipment = new Shipment();
             copyShipment.TrackingCode = this.TrackingCode;
@@ -157,7 +157,7 @@ namespace Smart_Delivery_Management_System05
 
         public Shipment ShallowCopy()
         {
-           
+
             return (Shipment)this.MemberwiseClone();
         }
 
@@ -166,19 +166,22 @@ namespace Smart_Delivery_Management_System05
             return ShallowCopy();
         }
 
-       public Shipment DeepCopy()
+        public Shipment DeepCopy()
         {
             Shipment copyShipment = new Shipment();
             copyShipment.TrackingCode = this.TrackingCode;
             copyShipment.Description = this.Description;
             copyShipment.Weight = this.Weight;
             copyShipment.DeliveryFee = this.DeliveryFee;
-            copyShipment.Destination = new DeliveryAddress(this.Destination.City,this.Destination.Street,this.Destination.Building_Number);
+            copyShipment.Destination = new DeliveryAddress(this.Destination.City, this.Destination.Street, this.Destination.Building_Number);
 
             return copyShipment;
 
         }
 
-
+        public static int GetTotalShipmentsCreated()
+        {
+            return TotalShipmentsCreated;
+        }
     }
 }

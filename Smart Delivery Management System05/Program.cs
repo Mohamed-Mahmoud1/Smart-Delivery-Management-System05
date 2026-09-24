@@ -142,12 +142,21 @@ namespace Smart_Delivery_Management_System05
 
             #endregion
 
-
             #region 5.Static Constructor
             //Console.WriteLine(Shipment.TotalShipmentsCreated);
             #endregion
 
+            #region 6.Static Method
 
+            //DeliveryAddress deliveryadders = new DeliveryAddress("Cairo");
+            //Shipment shipment1 = new Shipment("SH001", "Laptop", 3, 80, deliveryadders);
+
+            //Shipment shipment2 = shipment1.DeepCopy();
+
+            //Console.WriteLine($"Total Shipments Created : {Shipment.GetTotalShipmentsCreated()}");
+
+
+            #endregion
 
             #endregion
 
