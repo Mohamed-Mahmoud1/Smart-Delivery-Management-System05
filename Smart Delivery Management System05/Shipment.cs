@@ -6,6 +6,7 @@ namespace Smart_Delivery_Management_System05
 {
     public class Shipment : ICloneable
     {
+       
         string _TackingCode;
         string _Description;
         decimal _Weight;
@@ -13,7 +14,7 @@ namespace Smart_Delivery_Management_System05
 
         public Shipment()
         {
-
+            TotalShipmentsCreated++;
         }
         public Shipment(string trackingCode)
         {
@@ -22,6 +23,7 @@ namespace Smart_Delivery_Management_System05
             Weight = 1;
             DeliveryFee = 50;
             Destination = default;
+            TotalShipmentsCreated++;
         }
 
         public Shipment(string tackingCode, string description, decimal weight, decimal deliveryFee, DeliveryAddress destination) : this()
@@ -91,6 +93,7 @@ namespace Smart_Delivery_Management_System05
 
         public virtual decimal EstimatedCost { get; }
 
+        public static int TotalShipmentsCreated { get; set; }
         public override string ToString()
         {
             return
@@ -141,6 +144,7 @@ namespace Smart_Delivery_Management_System05
             copyShipment.Weight = this.Weight;
             copyShipment.DeliveryFee = this.DeliveryFee;
             copyShipment.Destination = this.Destination;
+            TotalShipmentsCreated++;
 
             return copyShipment;
 
@@ -148,6 +152,7 @@ namespace Smart_Delivery_Management_System05
 
         public Shipment ShallowCopy()
         {
+           
             return (Shipment)this.MemberwiseClone();
         }
 
@@ -164,8 +169,11 @@ namespace Smart_Delivery_Management_System05
             copyShipment.Weight = this.Weight;
             copyShipment.DeliveryFee = this.DeliveryFee;
             copyShipment.Destination = new DeliveryAddress(this.Destination.City,this.Destination.Street,this.Destination.Building_Number);
+
             return copyShipment;
 
         }
+
+
     }
 }
