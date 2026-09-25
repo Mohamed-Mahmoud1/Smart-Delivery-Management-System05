@@ -15,7 +15,7 @@ namespace Smart_Delivery_Management_System05
         static Shipment()
         {
             TotalShipmentsCreated = 0;
-            Console.WriteLine("Static Constructor initialization!");
+            //Console.WriteLine("Shipment System Initialized!");
         }
         public Shipment()
         {
@@ -168,11 +168,8 @@ namespace Smart_Delivery_Management_System05
 
         public Shipment DeepCopy()
         {
-            Shipment copyShipment = new Shipment();
-            copyShipment.TrackingCode = this.TrackingCode;
-            copyShipment.Description = this.Description;
-            copyShipment.Weight = this.Weight;
-            copyShipment.DeliveryFee = this.DeliveryFee;
+            Shipment copyShipment = (Shipment)this.MemberwiseClone();
+            
             copyShipment.Destination = new DeliveryAddress(this.Destination.City, this.Destination.Street, this.Destination.Building_Number);
 
             return copyShipment;

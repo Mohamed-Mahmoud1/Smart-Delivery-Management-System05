@@ -190,11 +190,107 @@ namespace Smart_Delivery_Management_System05
 
             #endregion
 
+            #region 11.Main() Checklist
+            //Console.WriteLine("=======================================");
+            //Console.WriteLine("Smart Delivery Management System");
+            //Console.WriteLine("=======================================\n");
 
+            //Console.WriteLine("Shipment System Initialized!\n");
+
+            //Console.WriteLine("==========================================");
+            //Console.WriteLine("Creating Shipments...");
+            //Console.WriteLine("==========================================\n");
+            //DeliveryAddress deliveryadders = new DeliveryAddress("Cairo");
+
+            //StandardShipment standardshipment = new StandardShipment("SH001", "Laptop", 3, 80, deliveryadders);
+            //standardshipment.TrackingStatus = "In Transit";
+            //ExpressShipment expressshipment = new ExpressShipment("SH002", "Mobile Phone", 2, 60, deliveryadders, 30);
+            //expressshipment.TrackingStatus = "Out For Delivery";
+            //InternationalShipment internationalshipment = new InternationalShipment("SH003", "Television", 8, 120, deliveryadders, "Germany", 100);
+            //internationalshipment.TrackingStatus = "Delivered";
+            //Console.WriteLine("Standard Shipment Created\nExpress Shipment Created\nInternational Shipment Created\n");
+            //Console.WriteLine($"Total Shipments Created :{Shipment.TotalShipmentsCreated}\n");
+
+            //Console.WriteLine("==========================================");
+            //Console.WriteLine("Object Copying");
+            //Console.WriteLine("==========================================\n");
+
+            //StandardShipment standardshipment02 = standardshipment;
+            //Console.WriteLine("Original Shipment  : SH001");
+            //Console.WriteLine("Assigned Shipment: SH001");
+            //Console.WriteLine($"Same Object : true\n");
+
+            //Console.WriteLine("------------------------------------------");
+            //Console.WriteLine("Shallow Copy");
+            //Console.WriteLine("------------------------------------------\n");
+            //Console.WriteLine("Original Shipment Address : Cairo");
+            //Console.WriteLine("Copied Shipment Address   : Cairo\n");
+            //Console.WriteLine("Changing copied shipment address...\n");
+
+            //Shipment shipment01 = new Shipment("SH001", "Laptop", 3, 80, deliveryadders);
+            //Shipment shipment02 = shipment01.ShallowCopy();
+            //shipment02.Destination.City = "Giza";
+
+            //Console.WriteLine($"Original Shipment Address : {shipment01.Destination.City}");
+            //Console.WriteLine($"Copied Shipment Address : {shipment02.Destination.City}\n");
+            //Console.WriteLine("Same DeliveryAddress Object: True\n");
+
+            //Console.WriteLine("------------------------------------------");
+            //Console.WriteLine("Deep Copy");
+            //Console.WriteLine("------------------------------------------\n");
+
+            //Console.WriteLine("Original Shipment Address : Cairo");
+            //Console.WriteLine("Copied Shipment Address   : Cairo\n");
+            //Console.WriteLine("Changing copied shipment address...\n");
+            //Shipment shipment03 = shipment01.DeepCopy();
+
+
+            //shipment03.Destination.City = "Giza";
+
+            //Console.WriteLine($"Original Shipment Address : {shipment01.Destination.City}");
+            //Console.WriteLine($"Copied Shipment Address : {shipment03.Destination.City}\n");
+            //Console.WriteLine("Same DeliveryAddress Object: False\n");
+
+            //Console.WriteLine("==========================================");
+            //Console.WriteLine("Extension Methods");
+            //Console.WriteLine("==========================================\n");
+
+            //Console.WriteLine(standardshipment.GetSummary()+"\n");
+            //Console.WriteLine(expressshipment.GetSummary()+"\n");
+            //Console.WriteLine(internationalshipment.GetSummary());
+
+            //Console.WriteLine("\nSH001 Is Delivered : False \nSH003 Is Delivered : True\n");
+
+            //Console.WriteLine("==========================================");
+            //Console.WriteLine("Tracking Status");
+            //Console.WriteLine("==========================================\n");
+            //expressshipment.UpdateTrackingStatus("Out For Delivery\n");
+
+            //Console.WriteLine("==========================================");
+            //Console.WriteLine("Static Utilities");
+            //Console.WriteLine("==========================================\n");
+
+            //Console.WriteLine("------------------------------------------");
+            //Console.WriteLine("Delivery Center");
+            //Console.WriteLine("------------------------------------------\n");
+            //Console.WriteLine($"Total Shipments Created : {Shipment.TotalShipmentsCreated}\n");
+
+            //Console.WriteLine("==========================================");
+            //Console.WriteLine("Partial Method");
+            //Console.WriteLine("==========================================\n");
+            //expressshipment.UpdateTrackingStatus("Delived\n");
+
+
+            //Console.WriteLine("==========================================");
+            //Console.WriteLine("Assignment Completed");
+            //Console.WriteLine("==========================================\n");
 
             #endregion
 
 
+
+
+            #endregion
 
         }
     }

@@ -10,7 +10,7 @@ namespace Smart_Delivery_Management_System05
 
         public static string GetSummary(this Shipment shipment)
         {
-            return $"{shipment.TrackingCode} | {shipment.GetType().Name} | {shipment.Weight} KG | In Transit";
+            return $"{shipment.TrackingCode} | {shipment.GetType().Name} | {shipment.Weight} KG | {shipment.TrackingStatus}";
 
 
         }
